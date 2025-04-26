@@ -1,0 +1,26 @@
+#poder-ataque-tank{
+    display: none;
+    padding: 20px;
+}
+
+#qtde-mortes{
+    display: none;
+    padding: 20px;
+}
+
+#qtde-pessoas-curadas{
+    display: none;
+    padding: 20px;
+}
+
+#botao-apresentar-tank{
+    display: none;
+}
+
+#botao-apresentar-curandeiro{
+    display: none;
+}
+
+#botao-apresentar-suporte{
+    display: none;
+}

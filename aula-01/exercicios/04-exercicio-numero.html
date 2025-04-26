@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="04-exercicio-numero.css">
+</head>
+<body>
+    <h1>Jogadores</h1>
+    <div>
+        <label for="nomePersonagem">Digite o nome do personagem:</label>
+        <input type="text" id="nomePersonagem">
+    </div>
+
+    <div></div>
+        <label for="posicaoPersonagem">Selecione a posição do personagem:</label>
+        <select id="posicaoPersonagem" onchange="apresentarPosicaoPersonagem()">
+                <option value="tank">Tank</option>
+                <option value="curandeiro">Curandeiro</option>
+                <option value="suporte">Suporte</option>
+                <option value = "" selected disabled>Selecione uma opção</option>
+            </select>
+    </div>
+
+    <div>
+        <label for="nivelPersonagem">Selecione o nível do personagem:</label>
+        <input type="range" id="nivelPersonagem" name="nivelPersonagem" min="0" max="100" value="0">
+    </div>
+
+    <div id="poder-ataque-tank">
+        <label for="ataqueTank">Poder de ataque do Tank:</label>
+        <input type="text" id="ataqueTank">
+    </div>
+
+    <div id="qtde-pessoas-curadas">
+        <label for="pessoasCuradas">Quantidade de curados:</label>
+        <input type="text" id="pessoasCuradas">
+    </div>
+
+    <div id="qtde-mortes">
+        <label for="qtMortes">Quantidade de mortes:</label>
+        <input type="text" id="qtMortes">
+    </div>
+
+    <div id="botao-apresentar-tank">
+        <button onclick="botaoApresentarTank()">Apresentar Tank</button>
+        </div>
+        <div id="botao-apresentar-curandeiro">
+        <button onclick="botaoApresentarCurandeiro()">Apresentar Curandeiro</button>
+    </div>
+    <div id="botao-apresentar-suporte">
+        <button onclick="botaoApresentarSuporte()">Apresentar Suporte</button>
+    </div>
+    <script src="04-exercicio-numero.js"></script>
+</body>
+</html>
